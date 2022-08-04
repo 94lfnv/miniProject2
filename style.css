@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box; margin: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#BDF2D5, #F9F9C5)
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 650px;
+    /* border: solid 1px #02734A; */
+}
+
+.big-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 720px;
+    height: 490px; 
+    border-radius: 10px;
+    border: solid 1px #AEDBCE;
+} 
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#timer {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #F25050;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 90px;
+    color: #FEFBE7;
+    transition: all .2s ease-in-out;
+}
+
+#timer:hover {
+    width: 200px;
+    height: 90px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+#stopWatch {
+    width: 95px;
+    height: 90px;
+    /* border: solid 1px #F25050; */
+    background-color: #FEFBE7;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 90px;
+    color: #F25050;
+    transition: all .2s ease-in-out;
+}
+
+#stopWatch:hover {
+    width: 200px;
+    height: 90px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+#calendar {
+    width: 315px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: #FAF4B7;
+    border: solid 1px #A0BCC2;
+    margin: 0 auto;
+    padding-top: 6px;
+    text-align: center;
+    color: #6867AC;
+    transition: all .2s ease-in-out;
+}
+
+#calendar:hover {
+    transform: scale(1.03);
+}
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#checkList {
+    width: 350px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: #DBDFFD;
+    border: solid 2px #F6FFA4;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+    color: #FFBD35; 
+    font-size: 17px;
+    transition: all .2s ease-in-out;
+}
+
+#checkList:hover {
+    transform: scale(1.02);
+}
+
+#memo {
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    border: solid 1px #F25050;
+    background-color: #FEFBE7;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1px;
+    color: #219F94;
+    font-size: 17px;
+    transition: all .2s ease-in-out;
+}
+
+#memo:hover {
+    transform: scale(1.02);
+}
