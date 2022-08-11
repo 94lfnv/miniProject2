@@ -12,12 +12,21 @@
 }
 
 .wrap {
-    display: flex;
+    display: gird;
     justify-content: center;
     align-items: center;
     width: 800px;
     height: 650px;
+    padding-right: 40px;
     /* border: solid 1px #02734A; */
+}
+
+.curr-time {
+    float: right;
+    width: 120px;
+    color: #7fbaa9;
+    margin-bottom: 1px;
+    font-size: 20px;
 }
 
 .big-box {
@@ -36,42 +45,57 @@
 }
 
 #timer {
-    width: 95px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: #F25050;
     margin: 0 auto;
     text-align: center;
-    line-height: 90px;
+    line-height: 100px;
     color: #FEFBE7;
     transition: all .2s ease-in-out;
+    font-size: 20px;
 }
 
 #timer:hover {
     width: 200px;
-    height: 90px;
+    height: 100px;
     border-radius: 10px;
-    font-size: 40px;
 }
 
 #stopWatch {
-    width: 95px;
-    height: 90px;
-    /* border: solid 1px #F25050; */
+    width: 100px;
+    height: 100px;
     background-color: #FEFBE7;
     border-radius: 50%;
     margin: 0 auto;
     text-align: center;
-    line-height: 90px;
+    line-height: 100px;
     color: #F25050;
     transition: all .2s ease-in-out;
+    font-size: 20px;
 }
 
 #stopWatch:hover {
     width: 200px;
-    height: 90px;
+    height: 100px;
     border-radius: 10px;
-    font-size: 40px;
+}
+
+.timer-btn {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    background-color:transparent;
+    font-size: 20px;
+}
+
+.watch-btn {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    background-color:transparent;
+    font-size: 20px;
 }
 
 #calendar {
@@ -112,8 +136,47 @@
 }
 
 #checkList:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 }
+
+.input-form {
+    margin-bottom: 5px;
+}
+
+.input-form input {
+    width: 240px;
+    border: solid 1px #6867AC;
+    color: #6867AC;
+}
+
+.input-form button {
+    border: solid 1px #6867AC;
+    background-color: #F6FFA4;
+    color: #6867AC;
+}
+
+.check-list {
+    width: 280px;
+    padding-left: 40px;
+    color: #6867AC;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* .li {
+    width: 250px;
+    list-style: none;
+    color: #6867AC;
+    text-align: left;
+}
+
+.check-btn {
+    border: solid 1px #6867AC;
+    background-color: #F6FFA4;
+    color: #6867AC;
+    margin-left: 3px;
+    float: right;
+} */
 
 #memo {
     width: 350px;
@@ -130,5 +193,31 @@
 }
 
 #memo:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
+}
+
+#memo input {
+    border-style: none;
+    outline: none;
+    background-color: #FEFBE7;
+    width: 340px;
+    height: 120px;
+    color: #219F94;
+    font-size: 16px;
+}
+
+#memo button {
+    border: solid 1px #6867AC;
+    background-color: #F6FFA4;
+    color: #6867AC;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.play-list {
+    margin-top: 5px;
+    width: 250px;
+    height: 35px;
+    border: solid 1px #9fc8bd;
+    border-radius: 10px;
 }

@@ -1,7 +1,3 @@
-const timerBtn = document.querySelector("#timer");
+const btnBox = document.querySelector(".btn-box");
 
-const timer = () => {
-  console.log("hello");
-};
-
-timerBtn.addEventListener("click", timer);
+btnBox.style.visibility = "hidden";

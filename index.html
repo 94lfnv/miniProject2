@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Study With ME</title>
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
@@ -16,13 +16,45 @@
         <div class="curr-time" id="currTime"></div>
         <div class="big-box">
           <div class="left-box">
-            <div class="item" id="timer">timer</div>
-            <div class="item" id="stopWatch">stopwatch</div>
+            <div class="item" id="timer">
+              50:00
+              <div class="btn-box">
+                <button class="timer-btn">⏩</button>
+                <button class="timer-btn">⏸️</button>
+                <button class="timer-btn">⏹️</button>
+              </div>
+            </div>
+            <div class="item" id="stopWatch">
+              00:00
+              <div class="btn-box">
+                <button class="watch-btn">⏩</button>
+                <button class="watch-btn">⏸️</button>
+                <button class="watch-btn">⏹️</button>
+              </div>
+            </div>
             <div class="item" id="calendar">calendar</div>
           </div>
           <div class="right-box">
-            <div class="item" id="checkList">checklist</div>
-            <div class="item" id="memo">memo</div>
+            <div class="item" id="checkList">
+              checklist
+              <form class="input-form">
+                <input class="input-text" type="text" />
+                <button class="input-sub" type="submit">+</button>
+              </form>
+              <ul class="check-list">
+                <!-- <li class="li">
+                  <span class="span"></span>
+                  <button class="check-btn" type="button">x</button> -->
+                  <!-- <button class="check-btn" type="button">v</button> -->
+                </li>
+              </ul>
+            </div>
+            <div class="item" id="memo">
+              memo
+              <button type="submit">-</button> 
+              <br/>
+              <input type="text">
+            </div>
           </div>
         </div>
         <div class="play-list" id="playList"></div>
@@ -30,4 +62,7 @@
     </div>
   </body>
   <script src="script.js"></script>
+  <script src="checkList.js"></script>
+  <script src="clock.js"></script>
+  <!-- <script src="calendar.js"></script> -->
 </html>
